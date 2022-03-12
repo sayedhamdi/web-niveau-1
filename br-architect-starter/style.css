@@ -1,0 +1,37 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.logo{
+    font-size: 36px;
+    margin-left:40px;
+}
+.links{
+    margin-left:70%;
+}
+.links a {
+    font-size: 28px;
+    text-decoration: none;
+    color:black;
+    padding-left:20px;
+}
+.navbar{
+    padding:20px 0;
+    box-shadow: 0px 8px 20px grey;
+}
+.contact-card{
+    text-align: center;
+    width:400px;
+}
+.contact-name,.job-description{
+    font-size:28px;
+    font-family: Courier;
+}
+.contact-name{
+    color:black;
+}
+.job-description{
+    color:grey;
+    font-weight: lighter;
+}
