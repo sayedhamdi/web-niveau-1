@@ -1,0 +1,29 @@
+.parent{
+    height:1000px;
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border:3px solid black;
+}
+
+.children {
+    width:600px;
+    height:400px;
+    background:green;
+    border:2px solid orange;
+}
+.parent-weld-parent{
+    display: flex;
+    flex-direction: column;
+    background:yellow;
+    justify-content: center;
+    order:1;
+}
+.c-1{
+    order:0;
+}
+img{
+    width:50%;
+    height:200px;
+}

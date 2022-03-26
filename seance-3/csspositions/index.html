@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width:40vw;
+            height:40vh;
+            background:orange;
+            position:relative;
+        }
+        .child{
+            background:blue;
+            width:100px;
+            height:100px;
+           position: relative;
+           z-index: 5;
+        }
+        .child-1{
+            background:green;
+            width:100px;
+            height:100px;
+            position:relative;
+            top:-25px;
+            left:20px;
+            z-index:4;
+        }
+
+        .child-2{
+            background:yellow;
+            width:100px;
+            height:100px;
+            position:absolute;
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            h
+        </div>
+        <div class="child-1">
+            h
+        </div>
+
+        <div class="child-2"></div>
+    </div>
+</body>
+</html>
