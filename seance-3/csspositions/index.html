@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            margin:0;
+            padding:0;
+        }
         .parent{
             width:40vw;
             height:40vh;
             background:orange;
-            position:relative;
+        }
+        .g-parent{
+            width:60vw;
+            height:60vh;
+            background:purple;
+            position: relative;
+
         }
         .child{
             background:blue;
             width:100px;
             height:100px;
            position: relative;
-           z-index: 5;
+           z-index: -1;
         }
         .child-1{
             background:green;
@@ -34,20 +44,73 @@
             width:100px;
             height:100px;
             position:absolute;
+            top:0;
+            left:0;
+            z-index:6;
+        }
+        .messenger-chat{
+            width:150px;
+            height:150px;
+            background:rgb(25, 145, 182);
+            border-radius:50%;
+            position: fixed;
             right:0;
+            bottom:0;
+            z-index:9999;
+            
+        }
+        .obstacle{
+            background:red;
+            height:200px;
+            position:relative;
+            z-index:3;
+        }
+        .navbar{
+            height:80px;
+            background:black;
+            position: sticky;
+            top:0;
+            left:0;
+            z-index:9999; 
+        }
+        .news{
+            width:70vw;
+            height:70vh;
+            background:grey;
+
+
+        }
+        .sticky-child{
+            width:100px;
+            height:100px;
+            background:green;
+            position:sticky;
+            top:0;
         }
     </style>
 </head>
 <body>
-    <div class="parent">
-        <div class="child">
-            h
-        </div>
-        <div class="child-1">
-            h
-        </div>
+    <!-- <div class="navbar">
 
-        <div class="child-2"></div>
     </div>
+-->    <div class="g-parent">
+        <div class="parent">
+            <div class="child">
+                h
+            </div>
+            <div class="child-1">
+                h
+            </div>
+
+            <div class="child-2"></div>
+            <div class="messenger-chat"></div>
+            <div class="news">
+                <div class="sticky-child">
+                    sticky-child
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="obstacle"></div><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
