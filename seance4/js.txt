@@ -1,0 +1,75 @@
+
+Javascript ?  => live script 
+    brain du code 
+    controle de saisie 
+    jeux 
+    programmation 
+    fonction
+    typescript 
+
+wa9tech taamal?
+
+    +1989 HTML
+    +1995 JS 
+language de programmation ?
+
+
+    deux types : 
+        Compiled
+        interpreted
+==Code source => compilateur / interpreteur => code cible (resultat/execution) 
+ 
+ _____________________
+        phrase en espagnol
+
+_____________________
+
+______________________
+    phrase en français
+
+_______________
+
+Javascript :
+    language de programmation 
+    interpreted
+
+    Syntax 
+        declaration de variable
+        type de variable
+    C : 
+        Compiled 
+    Data Types :
+    static typing 
+        int  x = 4;
+        char 
+        string 
+        long 
+        long long 
+        float 
+        double 
+        unsigned char
+        float * 
+
+    dynamic typing :
+        pas de declaration de type
+
+    Types : 
+        Primitivie : 
+            string
+            number
+            bigInt
+            null
+            boolean
+            underfined
+            Symbol
+        Non primitive :
+            Object
+    
+        arithmitic operators : 
+            +
+            -
+            *
+            /
+            %
+            
+JS ?

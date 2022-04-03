@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello javascript</h1>
+    <script>
+      /*let age = 17
+
+        if (age <=0 || age >=100){
+            console.log("rak tekdheb")
+        }
+        else if (age >= 18 ){
+            console.log("majeur")
+        }
+        else if (age < 18){
+            console.log("mineur")
+        }
+
+
+        if (age>=18){
+            if (age<=100){
+                console.log("majeur")
+            }else {
+                console.log("rak tekdheb")
+            }
+        }else {
+            console.log("mineur")
+        }
+
+        //Equation de second degrée
+        //input ax2 + bx + c
+            // programme 
+
+        //output x1 et x2
+        */
+      
+
+      function resoudreEquation(a, b, c) {
+        let delta = b * b - 4 * a * c;
+
+        if (delta == 0) {
+          let solution = -b / (2 * a);
+          console.log("solution double x=" + solution);
+        } else if (delta < 0) {
+          console.log("solution complexe");
+        } else {
+          let x1 = (-b - Math.sqrt(delta)) / (2 * a);
+          let x2 = (-b + Math.sqrt(delta)) / (2 * a);
+          console.log(` les solutions sont  x1=${x1} et x2=${x2}`);
+        }
+      }
+      resoudreEquation(1,1,1);
+      resoudreEquation(1,2,1);
+      resoudreEquation(1,6,1);
+
+      // afficher mineur si age est strictement inferieur a 18
+      // sinon afficher majeur
+      // si age > 100 afficher "rak tekdheb"
+    </script>
+  </body>
+</html>
