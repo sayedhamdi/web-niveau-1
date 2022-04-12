@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    console.log("hello");
+    // input (x,y) ==> [ (x+y) ] => result 
+    let x,y,z;
+    x = 6
+    y = 8
+    z= x + y 
+    console.log(`resultat de l'addition de ${x} + ${y} = ${z}`)
+
+
+    let x1,y1,z1;
+    x1 = 9
+    y1 = 14
+    z1= x1 + y1 
+    console.log(`resultat de l'addition de ${x1} + ${y1} = ${z1}`)
+   
+
+
+    //always write dry code dry principle 
+    function add(x,y){
+        if (typeof(x) != 'number' || typeof(y)!='number'){
+            console.log("rodbelek rak el type eli hatitou mahounch number");
+        }else{
+            // hello
+            return x+y
+        }
+    }
+
+
+    add('5','8') //invocation
+    //invocation
+    add()
+    let result1 = add(5,8)
+    console.log(result1)
+    
+    function resoudreEquation(a, b, c) {
+        let delta = b * b - 4 * a * c;
+
+        if (delta == 0) {
+          let solution = -b / (2 * a);
+          console.log("solution double x=" + solution);
+        } else if (delta < 0) {
+          console.log("solution complexe");
+        } else {
+          let x1 = (-b - Math.sqrt(delta)) / (2 * a);
+          let x2 = (-b + Math.sqrt(delta)) / (2 * a);
+          console.log(` les solutions sont  x1=${x1} et x2=${x2}`);
+        }
+      }
+
+
+      let table = ['A','B',undefined,[1,2,3],function(){x+y}]
+        for (let i=0;i<table.length;i++){
+            console.log(table[i])
+        }      
+      //  [12,14,16,18]
+
+      // ecrire une fonction qui prend en valeur un table de nombre 
+      // trajaali la moyenne , le min , le max 
+        let table1 = [12,14,16,11,10,25]
+        let table2 = [12.25,14.15,16,11,10,25]
+        //
+        
+        function max(t){
+            let max = t[0]
+            for (let i=1;i<t.length;i++){
+                if(t[i]>max){
+                    max=t[i]
+                }
+            }
+            return max
+        }
+        function min(t){
+            let min=t[0] 
+            for (let i=1;i<t.length;i++){
+                if(t[i]<min){
+                    min=t[i]
+                }
+            }
+            return min
+        }
+        function moyenne (t){
+            let moy = 0
+            for (let i=0;i<t.length;i++){
+                moy+=t[i]/t.length
+            }
+            return moy
+        }
+
+        console.log("test max")
+
+        console.log(max([1,2,3,4,-11]))
+        console.log(max([1,24,3,32,-11]))
+        console.log("test min")
+        console.log(min([1,2,3,4,-11]))
+        console.log(min([1,24,3,32,6]))
+
+        console.log("test moyenne")
+
+        console.log(moyenne([5,5,5,5,5]))
+
+        let names = ["ahmed","aziz","mariem","ghasssen"]
+        function findName(t,search){
+            for(let i =0;i<t.length;i++){
+                if (search==t[i]){
+                    return true
+                }
+            }
+            return false
+        }
+        
+        console.log(findName(names,"ahmed"))
+        
+
+
+</script>
+</html>
